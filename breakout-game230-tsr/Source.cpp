@@ -111,13 +111,13 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 			if (event.type == Event::KeyPressed) {
-				if (event.key.code == Keyboard::LAlt && !alt_down) {
+				if (event.key.code == Keyboard::N && !alt_down) {
 					alt_down = true;
 					load_next_level();
 				}
 			}
 			if (event.type == Event::KeyReleased) {
-				if (event.key.code == Keyboard::LAlt) {
+				if (event.key.code == Keyboard::N) {
 					alt_down = false;
 				}
 			}
@@ -190,7 +190,7 @@ void update_state(float dt)
 			lost = false;
 		}
 	}
-	if (Keyboard::isKeyPressed(Keyboard::P) && num_paddles < 2) {
+	if (Keyboard::isKeyPressed(Keyboard::T) && num_paddles < 2) {
 		Paddle * paddle = new Paddle(SCREEN_WIDTH, SCREEN_HEIGHT, speed.x * 1.5, lives_left, 1);
 		Paddles.push_back(paddle);
 		SceneGraph.push_back(paddle);
