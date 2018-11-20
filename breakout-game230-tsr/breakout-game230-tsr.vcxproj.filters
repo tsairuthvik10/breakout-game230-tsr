@@ -94,12 +94,21 @@
     <Image Include="plane.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="coin.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="narcos.ogg">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="pablowin.ogg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="coinhit.ogg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cointoss.ogg">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -110,12 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Media Include="planecrash.wav">
-      <Filter>Resource Files</Filter>
-    </Media>
-    <Media Include="planediv.wav">
-      <Filter>Resource Files</Filter>
-    </Media>
-    <Media Include="planestart.wav">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>

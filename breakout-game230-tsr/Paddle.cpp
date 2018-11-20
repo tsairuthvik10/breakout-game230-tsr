@@ -36,9 +36,9 @@ Paddle::Paddle(int sw, int sh, float speed, int &l, int pad_num) {
 	}
 	setTex(lives);
 	SoundBuffer buff;
-	buff.loadFromFile("lose_life.wav");
+	buff.loadFromFile("cointoss.ogg");
 	lose_life_sound.setBuffer(buff);
-	buff.loadFromFile("lose.wav");
+	buff.loadFromFile("planecrash.wav");
 	lose.setBuffer(buff);
 	paddle_num = pad_num;
 }

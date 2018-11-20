@@ -40,9 +40,9 @@ Brick::Brick(bool ohb, bool invis, float x, float y, int sw, int sh, int l, Ball
 	brick_height = brick_width / 2;
 	brick.setPosition(Vector2f(x, y));
 	brick.setSize(Vector2f(brick_width, brick_height));
-	buff2.loadFromFile("planediv.wav");
+	buff2.loadFromFile("coinhit.ogg");
 	brick_hit.setBuffer(buff2);
-	buff1.loadFromFile("planestart.wav");
+	buff1.loadFromFile("cointoss.ogg");
 	brick_break.setBuffer(buff1);
 
 }

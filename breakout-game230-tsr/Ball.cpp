@@ -27,7 +27,7 @@ Ball::Ball(int sw, int sh, int r, vector<Paddle*> &pad, Vector2f baseVel) {
 	ball.setOrigin(Vector2f(r, r));
 //	ball.setOutlineColor(Color::Black);
 	//ball.setOutlineThickness(2);
-	bt.loadFromFile("plane.jpg");
+	bt.loadFromFile("coin.jpg");
 	ball.setTexture(&bt);
 	launching = true;
 	velocity.x = baseVel.x;
@@ -35,8 +35,8 @@ Ball::Ball(int sw, int sh, int r, vector<Paddle*> &pad, Vector2f baseVel) {
 	baseVelocity.x = baseVel.x;
 	baseVelocity.y = baseVel.y;
 
-	buff1.loadFromFile("planestart.wav");
-	buff2.loadFromFile("planediv.wav");
+	buff1.loadFromFile("cointoss.ogg");
+	buff2.loadFromFile("coinhit.ogg");
 	wall_bounce.setBuffer(buff2);
 
 	paddle_bounce.setBuffer(buff1);

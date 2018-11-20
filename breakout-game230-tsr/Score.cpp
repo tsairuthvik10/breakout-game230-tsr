@@ -38,7 +38,7 @@ void Score::update(float dt)
 		prev_score = *score;
 	}
 	ostringstream temp_s;
-	temp_s << "Score: " << prev_score;
+	temp_s << "Money: " << prev_score << " $";
 	score_obj.setString(temp_s.str());
 }
 
@@ -49,5 +49,5 @@ void Score::render(RenderWindow & w)
 
 void Score::increase_score()
 {
-	*score = *score + 1;
+	*score = *score + 10;
 }

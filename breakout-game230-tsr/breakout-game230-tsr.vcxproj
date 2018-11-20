@@ -160,6 +160,7 @@
     <ClInclude Include="Score.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="coin.jpg" />
     <Image Include="coke.jpg" />
     <Image Include="joint.jpg" />
     <Image Include="nshot.png" />
@@ -176,6 +177,8 @@
     <Image Include="two_lives2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="coinhit.ogg" />
+    <None Include="cointoss.ogg" />
     <None Include="narcos.ogg" />
     <None Include="pablowin.ogg" />
   </ItemGroup>
@@ -184,8 +187,6 @@
   </ItemGroup>
   <ItemGroup>
     <Media Include="planecrash.wav" />
-    <Media Include="planediv.wav" />
-    <Media Include="planestart.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

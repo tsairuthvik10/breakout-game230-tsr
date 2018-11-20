@@ -85,7 +85,7 @@ int main()
 	
 	buff.loadFromFile("pablowin.ogg");
 	win.setBuffer(buff);
-	buff2.loadFromFile("planestart.wav");
+	buff2.loadFromFile("cointoss.ogg");
 	brick_break.setBuffer(buff2);
 	buff3.loadFromFile("planecrash.wav");
 	lose.setBuffer(buff3);
@@ -208,7 +208,7 @@ void render_frame()
 	}
 	else {
 		ostringstream temp_s;
-		temp_s << "Your score was: " << current_score << "\nPress Enter to play again!";
+		temp_s << "Your illegal money was: " << current_score << " $\nPress Enter to play again!";
 		replay_message.setString(temp_s.str());
 		window.draw(replay_message);
 	}
